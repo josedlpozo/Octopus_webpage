@@ -5,7 +5,27 @@
     <title></title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>s
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+        function desglose(){
+            $("#text").html("");
+            var sensores =[];
+            sensores.push($("#temp1"),$("#htierra"),$("#rocio"),$("#haire"),$("#acel"),$("#bruj"));
+            var i;
+            var suma = 0;
+            for(i=0;i<sensores.length;i++){
+
+                if(sensores[i].attr("checked")){
+                    $("#text").html($("#text").html() + " "+ sensores[i].attr("name")+ " - " +sensores[i].attr("value")+"€\<br\>");
+                    suma += (+sensores[i].attr("value"));
+                }
+            }
+            $("#text").html($("#text").html() + "\<br\>"+"Suma : "+suma+" €");
+        }
+    </script>
 </head>
 <body>
 <div class="container">
@@ -49,44 +69,68 @@
 
         </div>
     </nav>
-
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" value="">
-            Sensor de temperatura LM35
-        </label>
+    <div class="row">
+        <div class="col-xs-12 col-s-12 col-md-8 col-lg-8">
+            <h3>Sensores:</h3>
+            <form role="form">
+                <div class="row">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="1.3" name="Sensor LM35" id="temp1">
+                            Sensor de temperatura LM35
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="5.5" name="Humeda de la tierra" id="htierra">
+                            Sensor de humedad de la tierra
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="6.5" name="Rocio" id="rocio">
+                            Sensor de rocio
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="6.7" name="DHT22" id="haire">
+                            Sensor de humedad relativa del aire
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="3.4" name="Acelerometro" id="acel">
+                            Acelerometro
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="3.5" name="Brujula" id="bruj">
+                            Brujula
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-default" onclick="desglose()">Total.</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-xs-12 col-s-12 col-md-4 col-lg-4">
+            <h3>Desglose:</h3>
+            <p id="text"></p>
+        </div>
     </div>
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" value="">
-            Sensor de humedad de la tierra
-        </label>
-    </div>
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" value="">
-            Sensor de rocio
-        </label>
-    </div>
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" value="">
-            Sensor de humedad relativa del aire
-        </label>
-    </div>
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" value="">
-            Acelerometro
-        </label>
-    </div>
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" value="">
-            Brujula
-        </label>
-    </div>
-    <p>Suma : 18.95</p>
 </div>
 </body>
 </html>
