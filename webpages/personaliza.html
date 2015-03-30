@@ -8,24 +8,9 @@
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-
-        function desglose(){
-            $("#text").html("");
-            var sensores =[];
-            sensores.push($("#basico"),$("#solar"),$("#bateria"),$("#mcp"),$("#basico_moto"),$("#gps"),
-            $("#rf"),$("#rf_sup"),$("#infra"));
-            var i;
-            var suma = 0;
-            for(i=0;i<sensores.length;i++){
-                if(sensores[i].attr("checked")){
-                    $("#text").html($("#text").html() + " "+ sensores[i].attr("name")+ " - " +sensores[i].attr("value")+"€\<br\>");
-                    suma += (+sensores[i].attr("value"));
-                }
-            }
-            $("#text").html($("#text").html() + "\<br\>"+"Suma : "+suma+" €");
-        }
-    </script>
+    <link rel="stylesheet" href="../css/nav-bar.css">
+    <script type="text/javascript" src="../js/nav-bar.js"></script>
+    <script type="text/javascript" src="../js/desglose_personaliza.js"></script>
 </head>
 <body>
 <div class="container">
