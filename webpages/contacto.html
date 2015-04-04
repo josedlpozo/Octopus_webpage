@@ -5,11 +5,26 @@
     <title></title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://mandrillapp.com/api/docs/js/mandrill.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+        function sendGmail(opts){
+            var str = 'http://mail.google.com/mail/?view=cm&fs=1'+
+                    '&to=' + opts.to +
+                    '&su=' + opts.subject +
+                    '&body=' + opts.message +
+                    '&ui=1';
+            location.href = str;
+            console.log("sendGMAIL");
+        }
+
+    </script>
 </head>
 <body>
 
-<div class="container">
+<div class="container-fluid">
     <div class="jumbotron">
             <div class="row">
                 <div class="col-xs-12 col-s-12 col-md-4 col-lg-4">
@@ -35,7 +50,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"></a>
+                <a class="navbar-brand" href="index.html">OCTOPUS</a>
             </div>
 
             <!-- Agrupar los enlaces de navegación, los formularios y cualquier
@@ -63,14 +78,18 @@
                                placeholder="Introduce tu email">
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" rows="3"></textarea>
+                        <textarea class="form-control" rows="3" id="text"></textarea>
                     </div>
                     <div class="form-group">
                         <label >Adjuntar un archivo</label>
                         <input type="file" >
                         <p class="help-block">Adjunte archivo pdf.</p>
                     </div>
-                    <button type="submit" class="btn btn-default">Enviar</button>
+                    <button type="button" class="btn btn-default" onclick="sendGmail({
+            to: 'josedlpozo@gmail.com',
+            subject: 'hi',
+            message: JSON.stringify(document.getElementById('text').html())
+        })">Enviar</button>
                     <!--<a href="mailto:josedlpozo@gmail.com">Enviar</a>-->
                 </form>
 
