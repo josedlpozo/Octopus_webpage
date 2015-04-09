@@ -16,7 +16,7 @@
     if (typeof define === 'function' && define.amd) {
         define([
             'jquery',
-            './blueimp-gallery'
+
         ], factory);
     } else {
         factory(
