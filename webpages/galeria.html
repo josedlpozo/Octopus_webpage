@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="./../css/bootstrap-image-gallery.min.css">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="jumbotron">
+        <div class="row">
+
+                <div class="col-xs-12 col-s-12 col-md-4 col-lg-4">
+
+                </div>
+                <div class="col-xs-12 col-s-12 col-md-8 col-lg-8">
+                    <h1>Octopus 3P</h1>
+                    <p>La insistencia es la clave del <strong>éxito.</strong></p>
+                </div>
+            </div>
+
+
+
+
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- El logotipo y el icono que despliega el menú se agrupan
+                     para mostrarlos mejor en los dispositivos móviles -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Desplegar navegación</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">OCTOPUS</a>
+                </div>
+
+                <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+                     otro elemento que se pueda ocultar al minimizar la barra -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./personaliza.html">Personaliza</a></li>
+                        <li class="active"><a href="./galeria.html">Galeria</a></li>
+                        <li><a href="./quien_somos.html">Quienes somos</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+
+                </div>
+
+            </nav>
+        <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+        <div id="blueimp-gallery" class="blueimp-gallery">
+            <!-- The container for the modal slides -->
+            <div class="slides"></div>
+            <!-- Controls for the borderless lightbox -->
+            <h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="close">×</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+            <!-- The modal dialog, which will be used to wrap the lightbox content -->
+            <div class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body next"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default pull-left prev">
+                                <i class="glyphicon glyphicon-chevron-left"></i>
+                                Previous
+                            </button>
+                            <button type="button" class="btn btn-primary next">
+                                Next
+                                <i class="glyphicon glyphicon-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+        <script src="./../js/bootstrap-image-gallery.min.js"></script>
+
+        <div>
+            <h3 class="text-center">Modelado en 3D y logos</h3>
+            <a href="./../sources/logo_principal.jpg" title="Primer logo" data-gallery>
+                <img src="./../sources/thumbnails/logo_principal_th.jpg" alt="Logo1">
+            </a>
+            <a href="./../sources/logo_secundario.jpg" title="Primer logo secundario" data-gallery>
+                <img src="./../sources/thumbnails/logo_secundario_th.jpg" alt="Logo2">
+            </a>
+            <a href="./../sources/1version_3d.png" title="1ºVersion 3D" data-gallery>
+                <img src="./../sources/thumbnails/1versio_3d_th.jpg" alt="3D">
+            </a>
+
+            <a href="./../sources/Nueva_Base_bocabajo.jpg" title="Base" data-gallery>
+                <img src="./../sources/thumbnails/base_th.jpg" alt="3D">
+            </a>
+            <a href="./../sources/Nueva_Base_bocarriba.jpg" title="Base" data-gallery>
+                <img src="./../sources/thumbnails/base2_th.jpg" alt="3D">
+            </a>
+            <a href="./../sources/Nueva_Base_peque§a.jpg" title="Base" data-gallery>
+                <img src="./../sources/thumbnails/base3_th.jpg" alt="3D">
+            </a>
+            <a href="./../sources/nombre_curva_1000x1000.png" title="OCTOPUS" data-gallery>
+                <img src="./../sources/thumbnails/octopus_curvo_th.jpg" alt="OCTOPUS">
+            </a>
+            <a href="./../sources/nombre_recto_1000x1000.png" title="OCTOPUS" data-gallery>
+                <img src="./../sources/thumbnails/octopus_recto_th.jpg" alt="OCTOPUS">
+            </a>
+            <a href="./../sources/Logo_1000x1000.png" title="Logo" data-gallery>
+                <img src="./../sources/thumbnails/logo_octopus.jpg" alt="OCTOPUS">
+            </a>
+            <a href="./../sources/Logo_nombre_1000x1000.png" title="Logo con nombre" data-gallery>
+                <img src="./../sources/thumbnails/logo_octopus_letra_th.jpg" alt="OCTOPUS">
+            </a>
+        </div>
+        <div>
+            <h3 class="text-center">Sensorización</h3>
+            <a href="./../sources/bq.JPG" title="BQZUM BT-328" data-gallery>
+                <img src="./../sources/thumbnails/bq_th.jpg" alt="BQZUM">
+            </a>
+            <a href="./../sources/brujula.jpg" title="Brujula" data-gallery>
+                <img src="./../sources/thumbnails/bruj_th.jpg" alt="Bruj">
+            </a>
+            <a href="./../sources/acel.jpg" title="Acelerometro" data-gallery>
+                <img src="./../sources/thumbnails/acel_th.jpg" alt="Acelerometro">
+            </a>
+            <a href="./../sources/LM35.jpg" title="LM35 - Sensor de temperatura" data-gallery>
+                <img src="./../sources/thumbnails/lm35_th.jpg" alt="LM35">
+            </a>
+            <a href="./../sources/zum_sensor_luz3.png" title="LDR" data-gallery>
+                <img src="./../sources/thumbnails/lumi_th.jpg" alt="LDR">
+            </a>
+            <a href="./../sources/sku_149801_1.jpg" title="Conversor A/D" data-gallery>
+                <img src="./../sources/thumbnails/pcf_th.jpg" alt="PCF891">
+            </a>
+            <a href="./../sources/humidity-temperature-sensor-dht22-500x500.jpg" title="DHT22 - Sensor temperatura" data-gallery>
+                <img src="./../sources/thumbnails/dht22_th.jpg" alt="DHT22">
+            </a>
+            <a href="./../sources/hmedad.jpg" title="Humedad de la tierra" data-gallery>
+                <img src="./../sources/thumbnails/hmedad_th.jpg" alt="Humedad tierra">
+            </a>
+            <a href="./../sources/rocio.JPG" title="Sensor de rocio" data-gallery>
+                <img src="./../sources/thumbnails/rocio_th.jpg" alt="Rocio">
+            </a>
+        </div>
+        <div>
+            <h3 class="text-center">Transmision y almacenamiento de datos</h3>
+            <a href="./../sources/rx.JPG" title="Receptor RF" data-gallery>
+                <img src="./../sources/thumbnails/rx_th.jpg" alt="RX - RF">
+            </a>
+            <a href="./../sources/rf.jpg" title="Modulo RF" data-gallery>
+                <img src="./../sources/thumbnails/rf_th.jpg" alt="RF">
+            </a>
+            <a href="./../sources/lcd.jpg" title="Pantalla LCD" data-gallery>
+                <img src="./../sources/thumbnails/lcd_th.jpg" alt="LCD">
+            </a>
+            <a href="./../sources/rx.JPG" title="Receptor RF" data-gallery>
+                <img src="./../sources/thumbnails/rx_th.jpg" alt="RX - RF">
+            </a>
+            <a href="./../sources/rf.jpg" title="Modulo RF" data-gallery>
+                <img src="./../sources/thumbnails/rf_th.jpg" alt="RF">
+            </a>
+        </div>
+        <div>
+            <h3 class="text-center">Gráficas</h3>
+            <a href="./../sources/graficas1.png" title="Gráficas - Matlab" data-gallery>
+                <img src="./../sources/thumbnails/graficas1.jpg" alt="Matlab">
+            </a>
+            <a href="./../sources/graficas2.png" title="Gráficas - Matlab" data-gallery>
+                <img src="./../sources/thumbnails/graficas2_th.jpg" alt="Matlab">
+            </a>
+        </div>
+        <div>
+            <h3 class="text-center">PCB</h3>
+            <a href="./../sources/pcb1.png" title="PCB" data-gallery>
+                <img src="./../sources/thumbnails/pcb1_th.jpg" alt="PCB">
+            </a>
+            <a href="./../sources/pcb3d.png" title="PCB3D" data-gallery>
+                <img src="./../sources/thumbnails/pcb3d_th.jpg" alt="PCB3D">
+            </a>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

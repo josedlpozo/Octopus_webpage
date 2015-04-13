@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/nav-bar.css">
+    <script type="text/javascript" src="../js/nav-bar.js"></script>
+    <script type="text/javascript" src="../js/desglose_personaliza.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="jumbotron">
+            <div class="row">
+                <div class="col-xs-12 col-s-12 col-md-4 col-lg-4">
+
+                </div>
+                <div class="col-xs-12 col-s-12 col-md-8 col-lg-8">
+                    <h1>Octopus 3P</h1>
+                    <p>La insistencia es la clave del <strong>éxito.</strong></p>
+                </div>
+            </div>
+
+
+
+
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- El logotipo y el icono que despliega el menú se agrupan
+                 para mostrarlos mejor en los dispositivos móviles -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Desplegar navegación</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">OCTOPUS</a>
+            </div>
+
+            <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+                 otro elemento que se pueda ocultar al minimizar la barra -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li class="active"><a href="./personaliza.html">Personaliza</a></li>
+                    <li><a href="./galeria.html">Galeria</a></li>
+                    <li><a href="./quien_somos.html">Quienes somos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+        <div class="row">
+            <p class="text-center">La personalización de nuestro robot le permite crear usted mismo el producto a medida de sus necesidades.
+            En este apartado podrá elegir el pack que más se ajuste a lo que usted está buscando, así como crear desde cero el robot.
+            </p>
+            <p class="text-center">Ofertamos dos packs predefinidos con los sensores que creemos que son indispensables.
+            </p>
+                <dl class="dl-horizontal">
+                    <dt>Pack básico: </dt>
+                    <dd>Formado por sensor de temperatura de baja precisión, sensor de humedad de la tierra y
+                    sensor de humedad relativa del aire.</dd>
+                    <dt>Pack motorizado: </dt>
+                    <dd>Formado por el pack básico de sensorización, además de motores para su movilización,
+                        sensor de ultrasonidos para un mejor movimiento y evitar obstáculos, brújula y acelerómetro.</dd>
+                </dl>
+            <p class="text-center">
+                Se puede elegir cualquiera de ambos packs, y añadir diversos sensores opcionales para mejorar las caracteristicas
+                de nuestro robot. Si tiene alguna duda o sugerencia, o alguna petición diferente a lo presentado en este apartado,
+                por favor acuda a Contacto de la barra de navegación y haganóslo saber.
+            </p>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-s-12 col-md-4 col-lg-6">
+                <h3>Sensores:</h3>
+                <form role="form">
+                    <div class="row">
+                        <div class="panel panel-primary" style="border-color: white">
+                            <div class="panel-heading" style="background-color:#BDBDBD;border-color: white">
+                            <h4 class="panel-title">Pack básico.</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"  value="70" name="Pack básico de sensorización." id="basico">
+                                        Pack básico de sensorización.
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="panel panel-primary" style="border-color: white">
+                            <div class="panel-heading" style="background-color:#BDBDBD;border-color: white">
+                                <h4 class="panel-title">Opcionales - Pack básico</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"   value="15" name="Panel solar." id="solar">
+                                        Panel solar.
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"   value="19.95" name="Batería" id="bateria">
+                                        Batería.
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"   value="8" name="Sensor MCP9800" id="mcp">
+                                        Sensor MCP9800. Temperatura a mayor precisión.
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="panel panel-primary" style="border-color: white">
+                            <div class="panel-heading" style="background-color:#BDBDBD;border-color: white">
+                                <h4 class="panel-title">Pack motorización básico.</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"   value="100" name="Pack motorización basico." id="basico_moto">
+                                        Pack motorización básico.
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="panel panel-primary" style="border-color: white">
+                            <div class="panel-heading" style="background-color:#BDBDBD;border-color: white">
+                                <h4 class="panel-title">Opcionales - Pack motorización.</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"  value="10" name="GPS." id="gps">
+                                        GPS.
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"  value="5" name="Modulo RF" id="rf">
+                                        Modulo RF.
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"  value="20" name="Modulo RF - mayor alcance" id="rf_sup">
+                                        Modulo RF con mayor alcance.
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"  value="15" name="Sensor de infrarrojo" id="infra">
+                                        Sensor de infrarrojo.
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-default" onclick="desglose()">Total.</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xs-12 col-s-12 col-md-8 col-lg-6">
+                <h3>Desglose:</h3>
+                <p id="text"></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://mandrillapp.com/api/docs/js/mandrill.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/sendEmail.js"></script>
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="jumbotron">
+            <div class="row">
+                <div class="col-xs-12 col-s-12 col-md-4 col-lg-4">
+
+                </div>
+                <div class="col-xs-12 col-s-12 col-md-8 col-lg-8">
+                    <h1>Octopus 3P</h1>
+                    <p>La insistencia es la clave del <strong>éxito.</strong></p>
+                </div>
+            </div>
+
+
+
+
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- El logotipo y el icono que despliega el menú se agrupan
+                 para mostrarlos mejor en los dispositivos móviles -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Desplegar navegación</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">OCTOPUS</a>
+            </div>
+
+            <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+                 otro elemento que se pueda ocultar al minimizar la barra -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./personaliza.html">Personaliza</a></li>
+                    <li><a href="./galeria.html">Galeria</a></li>
+                    <li><a href="./quien_somos.html">Quienes somos</a></li>
+                    <li  class="active"><a href="./contacto.html">Contacto</a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <div class="row">
+            <div class="col-xs-12 col-s-12 col-md-12 col-lg-12">
+                <p>En OCTOPUS estamos a disposición del cliente. Si tiene alguna duda, reclamación o sugerencia no dude en
+                    hacernoslo saber vía email.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-s-12 col-md-12 col-lg-12">
+                <form role="form">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control"
+                               placeholder="Introduce tu email" id="email_user">
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input  class="form-control"
+                               placeholder="Introduce asunto" id="subject_email">
+                    </div>
+                    <div class="form-group">
+                        <label>Body</label>
+                        <textarea class="form-control" rows="3" id="text" placeholder="Cuerpo del mensaje"></textarea>
+                    </div>
+                    <a href="#" id="link" style="text-decoration: none; color: black"><button type="button" onclick="sendEmail()" style="text-decoration: none;">Enviar</button></a>
+
+                    <!--<a href="mailto:josedlpozo@gmail.com">Enviar</a>-->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
